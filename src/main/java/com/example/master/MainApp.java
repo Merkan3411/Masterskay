@@ -32,7 +32,6 @@ public class MainApp extends Application {
                 resultArea.setText("Клиент не найден.");
             }
         });
-
         VBox root = new VBox(10, inputLabel, nameField, findButton, resultArea);
         root.setStyle("-fx-padding: 20px; -fx-font-size: 14px;");
         Scene scene = new Scene(root, 400, 300);
