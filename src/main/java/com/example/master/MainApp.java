@@ -25,7 +25,6 @@ public class MainApp extends Application {
                 resultArea.setText("Введите имя для поиска.");
                 return;
             }
-
             Client foundClient = clientService.findByFirstName(inputName);
             if (foundClient != null) {
                 resultArea.setText(foundClient.toString());
